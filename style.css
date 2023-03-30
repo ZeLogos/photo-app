@@ -1,0 +1,227 @@
+body * {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Replace with your HW2 CSS */
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    font-family: 'Helvetica';
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px;
+    margin-top: 80px;
+    
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 10%;
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+
+}
+
+.navbar a {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.title {
+    padding-left: 10px;
+}
+
+.menu-items a {
+    text-decoration: none;
+}
+
+.menu-items strong {
+    font-family: 'Comfortaa'
+}
+
+#main-left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 56%;
+}
+
+.profile-box p {
+    color: dimgray;
+}
+
+
+#stories {
+  display: flex;
+  flex-flow: row wrap;
+  column-gap: 10px;
+  min-height: 100px;
+  padding: 20px;
+  background-color: white;
+}
+
+#stories img {
+    border-radius: 50%;
+    border: 3px double dimgray;
+    width: 50px;
+    width: 70px;
+    height: 70px;
+}
+
+.profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 50%; /* add a fixed height value */
+}
+
+.card img {
+    height: 200%;
+    width: 100%;
+}
+.card-title {
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+
+}
+
+.card-footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+}
+
+.comment-area, .comment, .card-likes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+
+
+
+#rec-panel {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    row-gap: 20px;
+    padding: 20px;
+}
+
+#rec-panel img {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+#rec-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family:
+}
+
+#rec-user img {
+    height: 75px;
+    width: 75px;
+}
+
+.suggested-accounts {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    column-gap: 20px;
+    margin: 10px;
+}
+
+.comment-area a, .suggested-accounts a {
+    color: blue;
+}
+
+.comment-area {
+    border-top: 1px solid gray;
+}
+
+.comment strong {
+    padding-right: 8px;
+    width: 20%;
+}
+
+.suggested-accounts p, #suggestions {
+    color: dimgray;
+}
+
+/* Fonts */
+
+h1, h2, h3 {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+/* Responsive*/
+
+@media only screen and (max-width: 720px) {
+    #rec-panel {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .main-left {
+        width: 100%;
+    }
+
+    #stories {
+        width: 170%;
+    }
+
+    .card {
+        width: 170%;
+    }
+}
